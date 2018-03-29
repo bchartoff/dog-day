@@ -1,0 +1,140 @@
+body {
+	font: 100% "Lato", Helvetica, Arial, Verdana, sans-serif;
+	margin: 0;
+	background:fff;
+}
+.line {
+	fill: none;
+	stroke-width: 3px;
+}
+.human.line{
+	stroke: #004072;
+}
+.dog.line{
+	stroke: #8FC5CD;
+}
+.dog.dot{
+	fill: #fdbf11;
+}
+.dog.text{
+	fill: #8FC5CD;
+	font-weight: bold;
+	font-size: 16px;
+}
+.human.text{
+	fill: #004072;
+	font-weight: bold;
+	font-size: 16px;
+}
+.tick text{
+	font-family: Lato;
+	font-size: 14px;
+}
+.y.axis .tick line{
+	stroke: #dedddd;
+}
+.y.axis path{
+	display: none;
+}
+.label{
+	font-style: italic;
+	font-size: 14px;
+}
+#container{
+	max-width: 900px;
+	margin: 0 auto;
+	width: 100%;
+}
+#calContainer{
+	width: 610px;
+	margin-top: 50px;
+	margin: 0 auto;
+}
+#dogContainer{
+	float: left;
+}
+#humanContainer{
+	float: right;
+}
+.datepicker{
+	display: inline-block;
+}
+h2{
+	font-size: 30px;
+	width: 270px;
+	text-align: center;
+}
+#graphContainer{
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 130px;
+}
+#graphContainer svg{
+	margin-top: 120px;
+}
+#textWrapper{
+	position: relative;
+	top: -530px;
+	left: 80px;
+	width: 280px;
+	font-size: 18px;
+	line-height: 1.6;
+	background: rgba(255,255,255,.8);
+	padding: 20px;
+}
+#textWrapper span{
+	font-weight: bold;
+	border-bottom: 5px solid #fdbf11;
+}
+#explainer{
+	font-style: italic;
+	font-size: 18px;
+	margin: 0 auto;
+	width: 430px;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 29px;
+}
+#isMobile{
+	display: none;
+	width: 0;
+	height: 0;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+@media(max-width:600px){
+	#isMobile{
+		display: block;
+	}
+	#graphContainer{
+		width: 320px;
+	}
+	#explainer{
+		width: 230px;
+	}
+	#textWrapper{
+		top: -13px;
+		left: 0px;
+		width: 240px;
+		font-size: 16px;
+		background: none;
+	}
+	#graphContainer svg{
+		margin-top: 60px;
+	}
+	h2{
+		font-size: 25px;
+		width: 270px;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 40px;
+		margin-bottom: 8px;
+	}
+	#calContainer, #dogContainer, #humanContainer, .datepicker{
+		width: 100%;
+	}
+	.ui-datepicker-inline.ui-datepicker{
+		margin: 0 auto;
+	}
+}

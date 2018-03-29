@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>When's your dog dog?</title>
+  <link href="css/jquery-ui-1.10.1.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic,900" rel="stylesheet" type="text/css">
+  <link href="css/melon.datepicker.css" rel="stylesheet">
+  <link href = "css/dogday.css" rel = "stylesheet">
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+  <div id = "isMobile"></div>
+
+  <div id = "container">
+  <div id = "explainer"><strong>When's your dog day?</strong> That's the day when your age, in human years, is equal to your dog's age, in dog years. Select birthdates below to calculate, then mark your calendars!</div>
+  <div id = "calContainer">
+  <div id = "dogContainer">
+  <h2>When was your dog born?</h2>
+  <div class="datepicker ll-skin-melon" id = "dogBirthday"></div>
+  </div>
+  <div id = "humanContainer">
+  <h2>When were you born?</h2>
+  <div class="datepicker ll-skin-melon" id = "humanBirthday"></div>
+  </div>
+  </div>
+  <div id = "graphContainer"></div>
+  </div>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/dogday.js"></script>
+</body>
+</html>
+
+
+
